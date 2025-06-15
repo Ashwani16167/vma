@@ -18,9 +18,8 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center"
         >
-          <div className="relative h-[300px] sm:h-[400px] md:h-[500px] rounded-lg overflow-hidden order-2 md:order-1">
-            <Image
-              src="/images/gallery/501389757_18114858493470455_7956591901390520174_n_17871318327363629.jpg"
+          <div className="relative h-[300px] sm:h-[400px] md:h-[500px] rounded-lg overflow-hidden order-2 md:order-1">            <Image
+              src="/images/instagram/501389757_18114858493470455_7956591901390520174_n_17871318327363629.jpg"
               alt="Anyshi Sharma - Mehndi Artist"
               fill
               className="object-cover"

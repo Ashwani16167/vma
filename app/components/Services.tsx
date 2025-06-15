@@ -1,37 +1,37 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
 
 const services = [
   {
     title: 'Bridal Mehndi',
     description: 'Intricate full-hand and full-leg designs for your big day.',
-    image: '/images/gallery/502743851_18115309228470455_4862077146710808511_n_17971264538908271.jpg',
+    image: '/images/instagram/502743851_18115309228470455_4862077146710808511_n_17971264538908271.jpg',
   },
   {
     title: 'Engagement & Pre-Wedding',
     description: 'Beautiful designs to mark your special occasion.',
-    image: '/images/gallery/503033517_18115298431470455_3308539128820121699_n_17889803904257405.jpg',
-  },
-  {
+    image: '/images/instagram/503033517_18115298431470455_3308539128820121699_n_17889803904257405.jpg',
+  },  {
     title: 'Festive Mehndi',
     description: 'Celebrate festivals like Karva Chauth, Teej, and more with stunning designs.',
-    image: '/images/gallery/503180039_18115300042470455_796544400341621524_n_18030713369677171.jpg',
+    image: '/images/instagram/498294000_18113864545470455_5065615624419456552_n_18083870950736217.jpg',
   },
   {
     title: 'Baby Shower & Godh Bharai',
     description: 'Special designs for the mom-to-be.',
-    image: '/images/gallery/498294000_18113864545470455_5065615624419456552_n_18083870950736217.jpg',
+    image: '/images/instagram/503180039_18115300042470455_796544400341621524_n_18030713369677171.jpg',
   },
   {
     title: 'Corporate & Cultural Events',
     description: 'Group bookings and event services available.',
-    image: '/images/gallery/501128342_18114858502470455_9201617054042242095_n_17922582654091881.jpg',
+    image: '/images/instagram/501128342_18114858502470455_9201617054042242095_n_17922582654091881.jpg',
   },
   {
     title: 'Minimalist Designs',
     description: 'Modern, elegant touches for contemporary preferences.',
-    image: '/images/gallery/502728597_18115300033470455_8230937525650597186_n_17856717657439009.jpg',
+    image: '/images/instagram/502728597_18115300033470455_8230937525650597186_n_17856717657439009.jpg',
   },
 ];
 
@@ -62,12 +62,12 @@ const Services = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white rounded-lg shadow-lg overflow-hidden"
-              >
-                <div className="relative h-64">
-                  <img
+              >                <div className="relative h-64">
+                  <Image
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
                 <div className="p-6">
