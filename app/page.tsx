@@ -3,7 +3,7 @@
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
-import Gallery from './components/Gallery';
+import InstagramShowcase from './components/InstagramShowcase';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 
@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
-      <Gallery />
+      <InstagramShowcase />
       <Testimonials />
       <Contact />
     </>

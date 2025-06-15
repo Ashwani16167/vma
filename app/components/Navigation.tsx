@@ -35,13 +35,12 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="text-2xl font-bold text-rose-600">
             Anyshi Sharma
-          </Link>
-
-          {/* Desktop Navigation */}
+          </Link>          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <NavLink href="/#about">About</NavLink>
             <NavLink href="/#services">Services</NavLink>
             <NavLink href="/#gallery">Gallery</NavLink>
+            <NavLink href="/#instagram">Instagram</NavLink>
             <NavLink href="/#testimonials">Testimonials</NavLink>
             <NavLink href="/#contact">Contact</NavLink>
             
@@ -82,8 +81,7 @@ const Navigation = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: isMobileMenuOpen ? 1 : 0, y: 0 }}
         transition={{ duration: 0.2 }}
-      >
-        <div className="px-4 pt-2 pb-4 space-y-3">
+      >        <div className="px-4 pt-2 pb-4 space-y-3">
           <MobileNavLink href="/#about" onClick={toggleMobileMenu}>
             About
           </MobileNavLink>
@@ -92,6 +90,9 @@ const Navigation = () => {
           </MobileNavLink>
           <MobileNavLink href="/#gallery" onClick={toggleMobileMenu}>
             Gallery
+          </MobileNavLink>
+          <MobileNavLink href="/#instagram" onClick={toggleMobileMenu}>
+            Instagram
           </MobileNavLink>
           <MobileNavLink href="/#testimonials" onClick={toggleMobileMenu}>
             Testimonials

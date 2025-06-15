@@ -19,6 +19,14 @@ section {
   @apply transition-all duration-300;
 }
 
+/* Line clamp utilities */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* Custom animations */
 @keyframes fadeIn {
   from {
@@ -38,6 +46,67 @@ section {
 /* Custom utilities */
 .text-gradient {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-pink-600;
+}
+
+/* Instagram embed styles */
+.instagram-card-wrapper {
+  width: 400px !important;
+  height: 500px !important;
+  max-width: 400px !important;
+  min-width: 400px !important;
+  max-height: 500px !important;
+  min-height: 500px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+}
+
+.instagram-media {
+  border: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  max-height: 100% !important;
+  min-height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+  display: block !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  background: transparent !important;
+}
+
+.instagram-media > div {
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* Ensure proper aspect ratio for Instagram content */
+.instagram-media iframe {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  max-height: 100% !important;
+  border: none !important;
+}
+
+/* Fix for Instagram embed content */
+.instagram-media .instagram-embed-content {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Ensure all Instagram embed children respect the fixed size */
+.instagram-media * {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 /* Custom styles for hover effects */
