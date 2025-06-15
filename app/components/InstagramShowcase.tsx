@@ -422,13 +422,26 @@ const InstagramShowcase = () => {
                       width={600}
                       height={600}
                       className="w-full h-full object-cover"
-                    />
-                  ) : (
+                    />                  ) : (
                     <video
+                      key={instagramMedia[currentIndex].id}
                       src={instagramMedia[currentIndex].src}
                       controls
                       autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="metadata"
                       className="w-full h-full object-cover"
+                      onLoadedMetadata={(e) => {
+                        const video = e.target as HTMLVideoElement;
+                        video.currentTime = 0;
+                      }}
+                      onEnded={(e) => {
+                        const video = e.target as HTMLVideoElement;
+                        video.currentTime = 0;
+                        video.play().catch(() => {});
+                      }}
                     >
                       Your browser does not support the video tag.
                     </video>
