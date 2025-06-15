@@ -16,8 +16,9 @@ const InstagramShowcase = () => {
   const instagramHandle = '@varanasi_mehndi_artist';
   const instagramUrl = 'https://instagram.com/varanasi_mehndi_artist';
   const followersCount = '11.1K';
-  const postsCount = '277';  // Real Instagram media from your account
-  const instagramMedia = [    {
+  const postsCount = '277';  // Real Instagram media from your account - each image used only ONCE
+  const instagramMedia = [
+    {
       id: 1,
       type: 'video',
       src: '/images/instagram/AQONWSI4qG5I5D5H84RAH63kNV9mSkN39ZsbMfKiSlEZyROGPW5YkBiBxxkV10cjMUQ4CxvIZUwpt981xNC4wHDyHvmAdoKHWMBNM_18283792303245047.mp4',
@@ -66,16 +67,6 @@ const InstagramShowcase = () => {
     },
     {
       id: 6,
-      type: 'video',
-      src: '/images/instagram/AQNOxL3qBAlyNuLpmrUZMwyJ_3FVmSzllKhqlQXJNcIKIRoeW93a0C3LLUM3axIU3bZ5f3Fv6uhy6psRoxhrpGJcEiXdtXkOtCA4_18066970325060118.mp4',
-      thumbnail: '/images/instagram/470900825_18100528132470455_3060865980524860629_n_18344272141182736.jpg',
-      caption: 'Quick mandala design process! Watch how detailed patterns come to life ✨ #MandalaMehndi #QuickDesign #MehndiArt',
-      likes: 1654,
-      comments: 123,
-      date: 'May 2025'
-    },
-    {
-      id: 7,
       type: 'image',
       src: '/images/instagram/496967929_18113345059470455_6602100388414628641_n_18038982359537319.jpg',
       caption: 'Intricate mandala patterns with traditional touch ✨ Each line tells a story of heritage and artistry #MandalaMehndi #TraditionalArt #HeritageCraft',
@@ -84,7 +75,7 @@ const InstagramShowcase = () => {
       date: 'May 2025'
     },
     {
-      id: 8,
+      id: 7,
       type: 'image',
       src: '/images/instagram/497010452_18113342755470455_2907436923342994111_n_18041891657555275.jpg',
       caption: 'Bridal finger details that make all the difference 💍 Every finger tells a unique story #BridalFingers #DetailedWork #WeddingMehndi',
@@ -93,17 +84,7 @@ const InstagramShowcase = () => {
       date: 'May 2025'
     },
     {
-      id: 9,
-      type: 'video',
-      src: '/images/instagram/AQNxJunqAL4Y6933WOWvWdUoBrqzsEXfbPWp9j_Z62PNZMH2tIkurU4xSEOny6WBVaDS3QAh4jFwiArmEyoyzeZMK9M5CnS5BmQHmg_17945390246855733.mp4',
-      thumbnail: '/images/instagram/470900825_18100528132470455_3060865980524860629_n_18344272141182736.jpg',
-      caption: 'Beautiful finger mehndi design tutorial 💫 Perfect for beginners and experts alike #FingerMehndi #Tutorial #MehndiArt',
-      likes: 1789,
-      comments: 145,
-      date: 'May 2025'
-    },
-    {
-      id: 10,
+      id: 8,
       type: 'image',
       src: '/images/instagram/497544467_18113342764470455_4009163775650334659_n_18314140789228859.jpg',
       caption: 'Elegant finger art with contemporary flair 💎 Modern minimalism meets traditional beauty #FingerArt #ContemporaryMehndi #ModernDesign',
@@ -112,7 +93,7 @@ const InstagramShowcase = () => {
       date: 'May 2025'
     },
     {
-      id: 11,
+      id: 9,
       type: 'image',
       src: '/images/instagram/498294000_18113864545470455_5065615624419456552_n_18083870950736217.jpg',
       caption: 'Contemporary fusion design for modern brides 🌟 Blending tradition with contemporary style #FusionMehndi #ModernBride #Contemporary',
@@ -121,17 +102,7 @@ const InstagramShowcase = () => {
       date: 'May 2025'
     },
     {
-      id: 12,
-      type: 'video',
-      src: '/images/instagram/AQOfWqvXp4cUuRvyF92Ex50hNOfnkzxOclPyCSQtR6WgGThOPuCqMA2OyN7Q1Z7fn3CfsoZHiHCaHh09oaK7IPPFa6WWYPhMDXs6b9I_17865117261306590.mp4',
-      thumbnail: '/images/instagram/profile.jpg',
-      caption: 'Watch this intricate bridal design come to life! Time-lapse of detailed work ✨ #BridalMehndi #TimeLapse #WeddingArt',
-      likes: 2245,
-      comments: 189,
-      date: 'May 2025'
-    },
-    {
-      id: 13,
+      id: 10,
       type: 'image',
       src: '/images/instagram/501128342_18114858502470455_9201617054042242095_n_17922582654091881.jpg',
       caption: 'Bridal masterpiece in progress 👰✨ Every stroke carefully crafted for your special day #BridalMehndi #WeddingArt #BridalBeauty',
@@ -140,7 +111,7 @@ const InstagramShowcase = () => {
       date: 'May 2025'
     },
     {
-      id: 14,
+      id: 11,
       type: 'image',
       src: '/images/instagram/501389757_18114858493470455_7956591901390520174_n_17871318327363629.jpg',
       caption: 'Elegant mandala patterns for special occasions 🌸 Each circle tells a story of perfection #MandalaMehndi #ElegantDesign #SpecialOccasion',
@@ -149,17 +120,7 @@ const InstagramShowcase = () => {
       date: 'May 2025'
     },
     {
-      id: 15,
-      type: 'video',
-      src: '/images/instagram/AQOCyxshB6Nhmq3vhPHcNNQT3dGm6ozKjB9boEdd4lvbFUMrsjteAYemUKpgQWr5a2aWWhpLUdvoX0umOaem8O4n0S8VonUa68Jy4A_18083450611658452.mp4',
-      thumbnail: '/images/instagram/470900825_18100528132470455_3060865980524860629_n_18344272141182736.jpg',
-      caption: 'Traditional bridal mehndi application process! Every stroke matters ✨ #BridalMehndiProcess #WeddingPrep #TraditionalArt',
-      likes: 1892,
-      comments: 167,
-      date: 'June 2025'
-    },
-    {
-      id: 16,
+      id: 12,
       type: 'image',
       src: '/images/instagram/502621268_18115298422470455_3471767078940836466_n_17935142340018980.jpg',
       caption: 'Stunning contemporary design blend 🌟 Perfect fusion of modern and traditional elements #ContemporaryMehndi #FusionArt #ModernTradition',
@@ -168,7 +129,7 @@ const InstagramShowcase = () => {
       date: 'June 2025'
     },
     {
-      id: 17,
+      id: 13,
       type: 'image',
       src: '/images/instagram/502728597_18115300033470455_8230937525650597186_n_17856717657439009.jpg',
       caption: 'Stunning back hand design for special celebrations 🌟 Intricate details that captivate #BackHandMehndi #DetailedWork #ArtisticDesign',
@@ -177,7 +138,7 @@ const InstagramShowcase = () => {
       date: 'June 2025'
     },
     {
-      id: 18,
+      id: 14,
       type: 'image',
       src: '/images/instagram/502743851_18115309228470455_4862077146710808511_n_17971264538908271.jpg',
       caption: 'Delicate finger patterns that steal the show 💎 Minimalist elegance at its finest #FingerMehndi #MinimalistDesign #ElegantArt',
@@ -186,17 +147,7 @@ const InstagramShowcase = () => {
       date: 'June 2025'
     },
     {
-      id: 19,
-      type: 'video',
-      src: '/images/instagram/AQNexs8RYReciI5WoOucczeLXPdAvjEt2KxbQMXhKMj1iHPuvpIvGGaq4LJuft3q0hYIxiIODjyIsTgaKB10hFV8eegwkXKlpG2o_18074227342922786.mp4',
-      thumbnail: '/images/instagram/profile.jpg',
-      caption: 'Mesmerizing mandala creation in real-time! Watch the magic happen 🎨 #MandalaMehndi #ArtInMotion #MehndiMagic',
-      likes: 2156,
-      comments: 198,
-      date: 'June 2025'
-    },
-    {
-      id: 20,
+      id: 15,
       type: 'image',
       src: '/images/instagram/503033517_18115298431470455_3308539128820121699_n_17889803904257405.jpg',
       caption: 'Intricate mandala artistry at its finest ✨ Precision and beauty in every circle #MandalaArt #PrecisionWork #MehndiMasterpiece',
@@ -205,7 +156,7 @@ const InstagramShowcase = () => {
       date: 'June 2025'
     },
     {
-      id: 21,
+      id: 16,
       type: 'image',
       src: '/images/instagram/503180039_18115300042470455_796544400341621524_n_18030713369677171.jpg',
       caption: 'Perfect festive look complete! Ready to celebrate in style 🎉 #FestiveMehndi #CelebrationReady #MehndiArt',
