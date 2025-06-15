@@ -1,0 +1,26 @@
+# Dependencies
+node_modules
+
+# Build outputs
+.next/out
+.next/.next
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Instagram export data (not needed for deployment)
+instagram-varanasi_mehndi_artist-2025-06-08-7uonziXw
+photos
